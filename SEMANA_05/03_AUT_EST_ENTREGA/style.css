@@ -1,0 +1,271 @@
+html{
+    background-color: #371a52;
+    font-family: 'Rubik', sans-serif
+
+
+}
+
+body {
+    display:flex;
+}
+header{
+    height: 1080px;
+    width: 500px;
+    background-color: #29153b;
+
+
+}
+
+main {
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qb{
+    
+    height: 800px;
+    width: 1300px;
+    background-color: #29153b;
+    margin-top: 278px;
+
+    display: flex;
+
+}
+.habil2{
+    color:#605757
+
+}
+
+.bloco{
+    border-bottom:white solid 1px;
+
+    display: block;
+
+    height: 30%;
+    width: 100%;
+    ;
+
+
+}
+.bloco1{
+    border-bottom:white solid 1px;
+    text-align: center;
+    height: 17%;
+    width: 100%;
+    margin-top: 35%;
+
+
+}
+
+.habil{
+    text-align: center;
+    margin-top: 26%;
+    color:#605757
+
+}
+.bola{
+    border-radius: 50%;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    margin-top: 10px;
+
+}
+
+.olla{
+    border-radius: 50%;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    margin-top: 12px;
+
+}
+
+.llob{
+    font-size: 25px;
+    color: white;
+
+}
+
+.llob{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+
+}
+.llob0{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+
+}
+.llob0{
+    font-size: 25px;
+    color: white;
+}
+.llob1{
+    display: flex;
+    width: 210px;
+    justify-content: space-around;
+
+}
+.llob1{
+    font-size: 25px;
+    color: white;
+
+}
+
+.boll{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+
+}
+.boll1{
+    display: flex;
+    width: 230px;
+    justify-content: space-around;
+
+}
+.boll2{
+    display: flex;
+    width: 230px;
+    justify-content: space-around;
+
+}
+
+.boll > span{
+    color: white;
+    font-size: 25px ;
+}
+.boll1 > span{
+    color: white;
+    font-size: 25px ;
+}
+.boll2 > span{
+    color: white;
+    font-size: 25px ;
+}
+
+    
+
+
+.div-1{
+    width: 70%;
+    border-right: white solid 1px;
+}
+
+.png0{
+    width: 400px;
+    margin: 50px;
+   
+    
+}
+
+.color1{
+    font-size: 60px;
+    color: #605757;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.color2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+#let{
+    width: 508px;
+    border: 1px solid white;
+    margin: -10px;
+    
+}
+
+#let3{
+    
+    height: 800px;
+    border-right: 1px solid white;
+    
+    
+}
+
+
+.sobre{
+    color: white ;
+    text-align: center;
+    ;
+
+}
+
+p{
+    color: aliceblue;
+    margin-top: -30px;    
+
+
+}
+
+h3{
+    font-size: 25px;
+    color: #605757;
+
+
+}
+
+.sobre1{
+    margin-top: 40px ;
+
+}
+
+.c1{
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    width: 180px;
+    color: #605757;
+    color: #605757;
+    
+    
+    
+    
+}
+.c2{
+    font-size: 40px;
+    margin: 20px;
+    
+    width: 180px;
+    color: #605757;
+    
+    
+}
+.c3{
+    font-size: 40px;
+    margin: 20px;
+    width: 180px;
+    color: #605757;
+}
+
+.formacao{
+    margin-top: -10px;
+    margin: 60px;
+    
+
+}
+
+.experiencia{
+    margin-top: -10px;
+    margin: 60px;
+
+}
+
+.realizacao{
+    margin-top: -10px;
+    margin: 60px;
+
+}
+
+
+
