@@ -362,5 +362,146 @@ h3{
     }
 }
 
+@media screen and ( max-width: 768px) {
+    .qb{
+        float: left;
+        margin-top: 220%;
+        margin-left: -200%;
+        display: block;
+        height: 1600px;
+        width: 500px;
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: -20px;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
 
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+@media screen and ( max-width: 520px) {
+    .qb{
+        float: left;
+        margin-top: 260%;
+        margin-left: -220%;
+        display: block;
+        height: 1600px;
+        width: 500px;
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: 0%;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+
+@media screen and ( max-width: 414px) {
+    
+    
+    .qb{
+        position: absolute;
+        
+        top: 3%;
+        right: -95px;
+        
+    
+        
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: 0%;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
 
