@@ -7,7 +7,7 @@ html{
 
 #box{
     position: absolute;
-    left: 27vw;
+    left: 22vw;
     top: 1vw;
     width: 10vw;
     height: 1.5vw;
@@ -15,7 +15,7 @@ html{
 }
 #box1{
     position: absolute;
-    left: 27vw;
+    left: 22vw;
     top: 3vw;
     width: 10vw;
     height: 1.5vw;
@@ -23,7 +23,7 @@ html{
 }
 #box2{
     position: absolute;
-    left: 27vw;
+    left: 22vw;
     top: 5vw;
     width: 10vw;
     height: 1.5vw;
@@ -222,13 +222,12 @@ main {
 .sobre{
     color: white ;
     text-align: center;
-    ;
-
 }
 
 p{
     color: aliceblue;
-    margin-top: -30px;    
+    margin-top: -30px;
+    position: absolute;    
 
 
 }
@@ -241,7 +240,9 @@ h3{
 }
 
 .sobre1{
-    margin-top: 40px ;
+    margin-top: 40px;
+    word-wrap: break-word;
+    width: 490px;
 
 }
 
@@ -385,5 +386,96 @@ h3{
     }
 }
 
+@media screen and ( max-width: 414px) {
+    
+    #box{
+        position: absolute;
+        left: 25vw;
+        top: 660vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
+    #box1{
+        position: absolute;
+        left: 25vw;
+        top:670vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
+    #box2{
+        position: absolute;
+        left: 25vw;
+        top: 680vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
 
+    
+    
+    .qb{
+        position: absolute;
+        
+        top: 3%;
+        right: -95px;
+        
+    
+        
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: 0%;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+
+
+#slide {
+width: 400px;
+overflow: hidden;
+height: 400px;
+margin: 50px auto;
+box-shadow: 0 0 8px #000;
+position: relative;
+}
+#slide img {
+position: absolute;
+z-index: 1;
+display: none;
+
+}
+	
 
