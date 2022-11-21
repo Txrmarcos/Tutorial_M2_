@@ -258,6 +258,8 @@ h3{
 .experiencia{
     margin-top: -10px;
     margin: 60px;
+    word-wrap: break-word;
+    width: 450px;
 
 }
 
