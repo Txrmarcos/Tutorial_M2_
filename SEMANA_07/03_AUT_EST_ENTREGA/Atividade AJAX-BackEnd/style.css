@@ -1,0 +1,502 @@
+html{
+    background-color: #371a52;
+    font-family: 'Rubik', sans-serif
+
+
+}
+
+#printar0{
+    word-wrap: break-word;
+    width: 26vw;
+    top: 80%;
+    
+}
+
+#box{
+    position: absolute;
+    left: 28vw;
+    top: 1vw;
+    width: 10vw;
+    height: 1.5vw;
+    border-radius: 10px;
+}
+#box1{
+    position: absolute;
+    left: 28vw;
+    top: 3vw;
+    width: 10vw;
+    height: 1.5vw;
+    border-radius: 10px;
+}
+#box2{
+    position: absolute;
+    left: 28vw;
+    top: 5vw;
+    width: 10vw;
+    height: 1.5vw;
+    border-radius: 10px;
+}
+#box3{
+    position: absolute;
+    left: 27vw;
+    top: 7vw;
+    width: 12vw;
+    height: 1.5vw;
+    border-radius: 10px;
+}
+
+body {
+    display:flex;
+}
+header{
+    height: 1080px;
+    width: 500px;
+    background-color: #29153b;
+
+
+}
+
+main {
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qb{
+    
+    height: 800px;
+    width: 1300px;
+    background-color: #29153b;
+    margin-top: 278px;
+
+    display: flex;
+
+}
+.habil2{
+    color:#605757
+
+}
+
+.bloco{
+    border-bottom:white solid 1px;
+
+    display: block;
+
+    height: 30%;
+    width: 100%;
+    ;
+
+
+}
+.bloco1{
+    border-bottom:white solid 1px;
+    text-align: center;
+    height: 17%;
+    width: 100%;
+    margin-top: 35%;
+
+
+}
+
+.habil{
+    text-align: center;
+    margin-top: 26%;
+    color:#605757
+
+}
+.bola{
+    border-radius: 50%;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    margin-top: 10px;
+
+}
+
+.olla{
+    border-radius: 50%;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    margin-top: 12px;
+
+}
+
+.llob{
+    font-size: 25px;
+    color: white;
+
+}
+
+.llob{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+
+}
+.llob0{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+
+}
+.llob0{
+    font-size: 25px;
+    color: white;
+}
+.llob1{
+    display: flex;
+    width: 210px;
+    justify-content: space-around;
+
+}
+.llob1{
+    font-size: 25px;
+    color: white;
+
+}
+
+.boll{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+
+}
+.boll1{
+    display: flex;
+    width: 230px;
+    justify-content: space-around;
+
+}
+.boll2{
+    display: flex;
+    width: 230px;
+    justify-content: space-around;
+
+}
+
+.boll > span{
+    color: white;
+    font-size: 25px ;
+}
+.boll1 > span{
+    color: white;
+    font-size: 25px ;
+}
+.boll2 > span{
+    color: white;
+    font-size: 25px ;
+}
+
+    
+
+
+.div-1{
+    width: 70%;
+    border-right: white solid 1px;
+}
+
+.png0{
+    width: 400px;
+    margin: 50px;
+   
+    
+}
+
+.color1{
+    font-size: 60px;
+    color: #605757;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.color2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+#let{
+    width: 508px;
+    border: 1px solid white;
+    margin: -10px;
+    
+}
+
+#let3{
+    
+    height: 800px;
+    border-right: 1px solid white;
+    
+    
+}
+
+
+.sobre{
+    color: white ;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+    margin-top: -30px;
+    position: absolute;    
+
+
+}
+
+h3{
+    font-size: 25px;
+    color: #605757;
+
+
+}
+
+.sobre1{
+    margin-top: 40px;
+    word-wrap: break-word;
+    width: 490px;
+
+}
+
+.c1{
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    width: 180px;
+    color: #605757;
+    color: #605757;
+    
+    
+    
+    
+}
+.c2{
+    font-size: 40px;
+    margin: 20px;
+    
+    width: 180px;
+    color: #605757;
+    
+    
+}
+.c3{
+    font-size: 40px;
+    margin: 20px;
+    width: 180px;
+    color: #605757;
+}
+
+.formacao{
+    margin-top: -10px;
+    margin: 60px;
+    
+
+}
+
+.experiencia{
+    margin-top: -10px;
+    margin: 60px;
+    word-wrap: break-word;
+    width: 450px;
+    
+    height: 20%;
+
+}
+
+
+
+.realizacao{
+    margin-top: -10px;
+    margin: 60px;
+
+}
+
+@media screen and ( max-width: 768px) {
+    .qb{
+        float: left;
+        margin-top: 220%;
+        margin-left: -200%;
+        display: block;
+        height: 1600px;
+        width: 500px;
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: -20px;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+@media screen and ( max-width: 520px) {
+    .qb{
+        float: left;
+        margin-top: 260%;
+        margin-left: -220%;
+        display: block;
+        height: 1600px;
+        width: 500px;
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: 0%;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+
+@media screen and ( max-width: 414px) {
+    
+    #box{
+        position: absolute;
+        left: 25vw;
+        top: 660vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
+    #box1{
+        position: absolute;
+        left: 25vw;
+        top:670vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
+    #box2{
+        position: absolute;
+        left: 25vw;
+        top: 680vw;
+        width: 50vw;
+        height: 5vw;
+        border-radius: 10px;
+    }
+
+    
+    
+    .qb{
+        position: absolute;
+        
+        top: 3%;
+        right: -95px;
+        
+    
+        
+        
+    
+        
+    
+    }
+    .div-1{
+        margin-left: 0px;
+        margin-top: 0%;
+        border-right: 0px;
+        float: left;
+        display: block;
+        
+    }
+
+    
+    .bloco{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+    .bloco1{
+        border-bottom:white solid 0px;
+    
+        
+    
+        height: 30%;
+        width: 100%;
+        ;
+    
+    
+    }
+}
+
+
+#slide {
+width: 400px;
+overflow: hidden;
+height: 400px;
+margin: 50px auto;
+box-shadow: 0 0 8px #000;
+position: relative;
+}
+#slide img {
+position: absolute;
+z-index: 1;
+display: none;
+
+}
+	
+
