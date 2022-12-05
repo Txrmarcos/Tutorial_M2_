@@ -9,8 +9,10 @@ const hostname = '127.0.0.1';
 const port = 3000;
 const app = express();
 
+
+
 /* Colocar toda a parte estática no frontend */
-app.use(express.static("../frontend/"));
+app.use(express.static("../test/"));
 
 /* Definição dos endpoints */
 /******** CRUD ************/
@@ -131,7 +133,7 @@ app.put('/atualizaExperiencia', urlencodedParser, (req, res) => {
 	sql = "UPDATE experiencia SET nome_empresa='" + insere.nome_empresa +"', data_inicio='" + insere.data_inicio +"', data_fim='"+ insere.data_fim +"', cargo='"+ insere.cargo +"', descricao='"+ insere.descricao +"' WHERE id_experiencia='" + insere.id_experiencia + "'";
 	console.log(sql);
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-	db.run(sql, [],  err => {
+	db.run(sql, [test1,test2,test3,test4,test5,test6],  err => {
 		if (err) {
 		    throw err;
 		}
