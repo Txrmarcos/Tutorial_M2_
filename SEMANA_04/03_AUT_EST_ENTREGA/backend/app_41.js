@@ -6,7 +6,7 @@ const sqlite3 = require('sqlite3').verbose();
 const DBPATH = '../data/BDs41.db';
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 3001;
 const app = express();
 
 /* Colocar toda a parte estática no frontend */
@@ -125,7 +125,7 @@ app.get('/atualizaExperiencia', (req, res) => {
 
 // Atualiza um registro (é o U do CRUD - Update)
 app.put('/atualizaExperiencia', urlencodedParser, (req, res) => {
-	let insere = req.body
+	let insere = req.query
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); 
 	sql = "UPDATE experiencia SET nome_empresa='" + insere.nome_empresa +"', data_inicio='" + insere.data_inicio +"', data_fim='"+ insere.data_fim +"', cargo='"+ insere.cargo +"', descricao='"+ insere.descricao +"' WHERE id_experiencia='" + insere.id_experiencia + "'";
@@ -142,6 +142,8 @@ app.put('/atualizaExperiencia', urlencodedParser, (req, res) => {
 });
 
 // Exclui um registro (é o D do CRUD - Delete) -------TUDO OK 
+
+//dell
 app.delete('/removeExperiencia', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); 

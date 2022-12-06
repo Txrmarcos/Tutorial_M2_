@@ -113,15 +113,17 @@ if(numero>=1){
 function printmaluca(){
 
     
-    let name = document.getElementById("max").value
-    let printar = document.getElementById("resultado")
+    let name = "documentchimpaarrr"
+    
     
     for (let i = 0; i < name.length; i++) {
         let array = name.split("");
     
         let text = ""
-        text +=  " " + array[i] 
-        return printar.innerHTML= array[i]
+        text +=  " " + array.join("\n"+=) 
+        
+        return text
+        
         
     }
 
