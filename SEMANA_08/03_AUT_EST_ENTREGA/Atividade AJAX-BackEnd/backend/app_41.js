@@ -164,6 +164,73 @@ app.post('/removeExperiencia', urlencodedParser, (req, res) => {
 	db.close(); // Fecha o banco
 });
 
+
+app.post('/insereFormacao', urlencodedParser, (req, res) => {
+	let insere = req.body
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); 
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	sql = "INSERT INTO formacao (curso, data_inicio, data_fim, descricao) VALUES ('" + req.body.curso + "', '" + req.body.data_inicio + "', '" + req.body.data_fim + "', '" + req.body.descricao + "')";
+	console.log(sql);
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}	
+	});
+	res.write('<p>USUARIO INSERIDO COM SUCESSO!</p><a href="/">VOLTAR</a>');
+	db.close(); // Fecha o banco
+	res.end();
+});
+
+app.get('/atualizaFormacao', (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); 
+	sql = "SELECT * FROM formacao WHERE id_formacao=" + req.body.id_formacao;
+	console.log(sql);
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+			throw err;
+		}
+		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+});
+
+// Atualiza um registro (é o U do CRUD - Update)
+app.post('/atualizaFormacao', urlencodedParser, (req, res) => {
+	let insere = req.body
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); 
+	sql = "UPDATE formacao SET curso='" + insere.curso +"', data_inicio='" + insere.data_inicio +"', data_fim='"+ insere.data_fim +"', descricao='"+ insere.descricao +"' WHERE id_formacao='" + insere.id_formacao + "'";
+	console.log(sql);
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}
+		res.write('<p>USUARIO ATUALIZADO COM SUCESSO!</p><a href="/">VOLTAR</a>');
+		res.end();
+	});
+	db.close(); // Fecha o banco
+});
+
+app.post('/removeFormacao', urlencodedParser, (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); 
+	sql = "DELETE FROM formacao WHERE id_formacao='" + req.body.id_formacao + "'";
+	console.log(sql);
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}
+		res.write('<p>USUARIO REMOVIDO COM SUCESSO!</p><a href="/">VOLTAR</a>');
+		res.end();
+	});
+	db.close(); // Fecha o banco
+});
+
 app.listen(port, hostname, () => {
   console.log(`Servidor rodando em http://${hostname}:${port}/`);
 });

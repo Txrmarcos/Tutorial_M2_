@@ -25,7 +25,7 @@
             <div class="form0">
                 <div class="form1">
                     <form name="form1" method="POST" action="/atualizaExperiencia" type = "submit"> 
-                        <h1>Editar Parágrafo</h1>
+                        <h1>Editar Experiencia</h1>
                         <input type="text" id="empresa" name="nome_empresa" placeholder="Empresa">
                         <br>
                         <input type="text" id="dataI" name="data_inicio" placeholder="Ano de Inicio">
@@ -43,24 +43,44 @@
                 </div>
                 <div class="form2">
                     <form action="/removeExperiencia" method="POST" type="submit">
-                        <input id ="userId0"type="number" name="id_experiencia" placeholder="ID para Excluir">
+                        <input id ="userId0"type="number" name="id_experiencia" placeholder="ID para Excluir Experiencia">
                         <button id="box5" type="submit">excluir</button>
+                    </form>
+                </div>
+                <div class="form5">
+                    <form action="/removeFormacao" method="POST" type="submit">
+                        <input id ="userId9" type="number" name="id_formacao" placeholder="ID para Excluir Formação">
+                        <button id="box7" type="submit">excluir</button>
                     </form>
                 </div>
                 <div class="form3">
                     <form action="/insereExperiencia" method="POST" type="submit">
-                        <h1>Adicionar Parágrafo</h1>
-                        <input type="text" id="empresa" name="nome_empresa" placeholder="Empresa">
+                        <h1 id="tex1">Adicionar Experiencia</h1>
+                        <input type="text" id="empresa0" name="nome_empresa" placeholder="Empresa">
+                        <br>
+                        <input type="text" id="dataI0" name="data_inicio" placeholder="Ano de Inicio">
+                        <br>
+                        <input type="text" id="dataF0" name="data_fim" placeholder="Ano de Fim">
+                        <br>
+                        <input type="text" id="cargo0" name="cargo" placeholder="Cargo">
+                        <br>
+                        <input type="text" id="desc0" name="descricao" placeholder="Descrição">
+                        <br>
+                        <button id="box6" type="submit">Confirmar</button>
+                    </form>
+                </div>
+                <div class="form4">
+                    <form action="/insereFormacao" method="POST" type="submit">
+                        <h1>Adicionar Formação</h1>
+                        <input type="text" id="empresa" name="curso" placeholder="Empresa">
                         <br>
                         <input type="text" id="dataI" name="data_inicio" placeholder="Ano de Inicio">
                         <br>
                         <input type="text" id="dataF" name="data_fim" placeholder="Ano de Fim">
                         <br>
-                        <input type="text" id="cargo" name="cargo" placeholder="Cargo">
-                        <br>
                         <input type="text" id="desc" name="descricao" placeholder="Descrição">
                         <br>
-                        <button id="box6" type="submit">Confirmar</button>
+                        <button id="box7" type="submit">Confirmar</button>
                     </form>
                 </div>
 
@@ -112,6 +132,10 @@
                     <p>Formado no MIT</p></br>
                     <p>Engenharia Industrial | 2022-2026</p></br>
                     <p>Formado na UFMG</p></br>
+                    <div id="printar1">
+
+
+                    </div>
                 </div>
                 <ul class="c2">
                     <li>Experiência</li>
@@ -292,10 +316,29 @@ fetch(urlBc)
         let usuarios = data;
         let saida = '';
         usuarios.map(function (experiencia) {
-            saida += '<p>' + `${experiencia.nome_empresa}` + ' | ' + `${experiencia.data_inicio}` + '-' + `${experiencia.data_fim}` + ' | ' + `${experiencia.cargo}` +' </br> '+ `${experiencia.descricao}`+'<p>';
+            saida += '<p id="pack1">' + `${experiencia.nome_empresa}` + ' | ' + `${experiencia.data_inicio}` + '-' + `${experiencia.data_fim}` + ' | ' + `${experiencia.cargo}` +' </br> '+ `${experiencia.descricao}`+'<p>';
             console.log('<p>' + `${experiencia.nome_empresa}` + ' - ' + `${experiencia.data_inicio}` + ' - ' + `${experiencia.data_fim}` + ' - ' + `${experiencia.cargo}`+'<p>');
         });
         document.getElementById("printar0").innerHTML = saida
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
+
+    const urlBd = 'http://127.0.0.1:3001/formacao'
+
+fetch(urlBd)
+    .then((response0) => {
+        return response0.json();
+    })
+    .then((data1) => {
+        let delle = data1;
+        let exit0 = '';
+        delle.map(function (formacao) {
+            exit0 += '<p id="pack0">' + `${formacao.curso}` + ' | ' + `${formacao.data_inicio}` + '-' + `${formacao.data_fim}` + ' | ' + `${formacao.descricao}` +'<p>';
+            console.log('<p>' + `${formacao.curso}` + ' | ' + `${formacao.data_inicio}` + '-' + `${formacao.data_fim}` + ' | ' + `${formacao.descricao}` +'<p>');
+        });
+        document.getElementById("printar1").innerHTML = exit0
     })
     .catch(function (error) {
         console.log(error);

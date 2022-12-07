@@ -1,9 +1,13 @@
 html{
     background-color: #371a52;
-    font-family: 'Rubik', sans-serif
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden  ;
+    
 
 
 }
+
+
 
 input{
     border-radius: 10px;
@@ -15,11 +19,11 @@ input{
 
 .form1{
     width: 15vw;
-    height: 12vw;
+    height: 14vw;
     background-color: #29153b;
     position: absolute;
     left:82%;
-    border-left:2px solid white ;
+    border-left:2px solid white;
 }
 .form2{
     width: 15vw;
@@ -31,12 +35,70 @@ input{
 }
 .form3{
     width: 15vw;
-    height: 12vw;
+    height: 14vw;
     background-color: #29153b;
     left: 66.8%;
     position: absolute;
     border-right: 2px solid white;    
+    border-left:2px solid white;
 
+}
+.form4{
+    width: 15vw;
+    height: 14vw;
+    background-color: #29153b;
+    left: 51.6%;
+    position: absolute;
+    border-right: 2px solid white;    
+
+}
+.form5{
+    width: 15vw;
+    height: 3vw;
+    left: 28%;
+    position: absolute;
+    top: 19%;    
+
+}
+
+#empresa0{
+    position: absolute;
+    top: 30%;
+    
+}
+#dataI0{
+    position: absolute;
+    top: 38%;
+
+}
+#dataF0{
+
+    position: absolute;
+    top: 46%;
+}
+#cargo0{
+    position: absolute;
+    top: 54%;
+}
+#desc0{
+
+    position: absolute;
+    top: 62%;
+}
+
+#box6{
+    position: absolute;
+    top: 70%;
+}
+
+
+
+#tex1{
+    position: absolute;
+    
+    width: 100%;
+    word-break: break-all;
+    font-size: 28px;
 }
 
 #printar0{
@@ -45,6 +107,25 @@ input{
     height: 4vw;
     top: 45vw;
     
+    
+}
+#printar1{
+    word-wrap: break-word;
+    width: 260vw;
+    height: 2vw;
+    top: 67%;
+    
+    
+    
+    
+}
+#pack0{
+    width: 10%;
+    background-color: #371a52;
+}
+#pack1{
+    width: 100%;
+    background-color: #371a52;
 }
 
 #box{
@@ -81,6 +162,14 @@ input{
 }
 
 #userId0{
+    width: 9.6vw;
+    height: 1.3vw;
+    border-radius: 10px;
+    border:1px solid #000;
+    
+
+}
+#userId9{
     width: 9.6vw;
     height: 1.3vw;
     border-radius: 10px;
@@ -171,6 +260,8 @@ main {
 }
 
 .llob{
+
+    top: 20%;
     font-size: 25px;
     color: white;
 
@@ -240,8 +331,9 @@ main {
 
 
 .div-1{
-    width: 70%;
+    width: 50%;
     border-right: white solid 1px;
+    height: 100%;
 }
 
 .png0{
@@ -355,8 +447,10 @@ h3{
 
 
 .realizacao{
-    margin-top: -10px;
+    position: absolute;
+    top: 105%;
     margin: 60px;
+    width: 100%;
 
 }
 

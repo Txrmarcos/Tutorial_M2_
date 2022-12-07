@@ -110,26 +110,13 @@ if(numero>=1){
 }
 
 
-function printmaluca(){
-
-    
-    let name = "documentchimpaarrr"
-    
-    
-    for (let i = 0; i < name.length; i++) {
-        let array = name.split("");
-    
-        let text = ""
-        text +=  " " + array.join("\n"+=) 
-        
-        return text
-        
-        
+function printMaluca() {
+    let print = String(document.getElementById("max").value);
+    printArray = print.split("");
+    for (let i = 0; i < printArray.length; i++) {
+      document.getElementById("resultado").innerHTML += `<p style = "margin-left: ${i*20}px;">${printArray[i]}</p>`;
     }
+  }
 
-
-}
-
-console.log(printmaluca("macacao louco"))
 
 
