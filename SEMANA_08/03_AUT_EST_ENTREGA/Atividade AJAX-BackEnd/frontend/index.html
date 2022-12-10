@@ -306,24 +306,7 @@
 
         });
 
-        const urlBc = 'http://127.0.0.1:3001/experiencia'
-
-fetch(urlBc)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        let usuarios = data;
-        let saida = '';
-        usuarios.map(function (experiencia) {
-            saida += '<p id="pack1">' + `${experiencia.nome_empresa}` + ' | ' + `${experiencia.data_inicio}` + '-' + `${experiencia.data_fim}` + ' | ' + `${experiencia.cargo}` +' </br> '+ `${experiencia.descricao}`+'<p>';
-            console.log('<p>' + `${experiencia.nome_empresa}` + ' - ' + `${experiencia.data_inicio}` + ' - ' + `${experiencia.data_fim}` + ' - ' + `${experiencia.cargo}`+'<p>');
-        });
-        document.getElementById("printar0").innerHTML = saida
-    })
-    .catch(function (error) {
-        console.log(error);
-    })
+            
 
     const urlBd = 'http://127.0.0.1:3001/formacao'
 
